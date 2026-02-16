@@ -95,7 +95,7 @@ Instead of training a model on *data*, we train a **model on other models**.
 
 ---
 
-### 📊 Evaluation Metrics
+### Evaluation Metrics
 
 - **Accuracy**
 - **Precision & Recall**
