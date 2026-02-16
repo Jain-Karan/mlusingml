@@ -1,11 +1,11 @@
-# 🧠 Generating Machine Learning Models Using Machine Learning Models
+# Generating Machine Learning Models Using Machine Learning Models
 
 > **Learning new tasks without new data.**  
 > This project explores how *machine learning models themselves* can be generated using **other machine learning models**, without direct task-specific supervision.
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This project introduces an unconventional but powerful idea:  
 **using generative models to create new classifiers by fusing existing ones**.
@@ -17,7 +17,7 @@ Specifically, we leverage **CycleGANs** to merge the learned feature representat
 
 By translating and combining their feature spaces, we generate a **new CNN** capable of detecting **black cats** — **without ever being trained on a single black cat image**.
 
-📊 **Result:**  
+ **Result:**  
 The generated model achieves **88% classification accuracy** on black cat detection, despite zero direct exposure to black cat data.
 
 This work opens new directions for:
@@ -27,23 +27,23 @@ This work opens new directions for:
 
 ---
 
-## ✨ Key Contributions
+## Key Contributions
 
-- 🔁 **CycleGAN-based Model Fusion**  
+-  **CycleGAN-based Model Fusion**  
   Uses CycleGANs to translate and align feature kernels between CNNs trained on unrelated domains.
 
-- 🧬 **Generated CNNs (Zero-shot Task Creation)**  
+-  **Generated CNNs (Zero-shot Task Creation)**  
   Constructs a task-specific classifier purely from pre-trained models.
 
-- 📉 **Feature Space Validation**  
+-  **Feature Space Validation**  
   Employs **UMAP**, **K-Means**, and **DBSCAN** to analyze and validate learned representations.
 
-- 🧪 **Unsupervised Generalization**  
+-  **Unsupervised Generalization**  
   Demonstrates black cat recognition without labeled black cat data.
 
 ---
 
-## 🧠 Core Idea (Intuition)
+##  Core Idea (Intuition)
 
 Instead of training a model on *data*, we train a **model on other models**.
 
@@ -59,13 +59,13 @@ Instead of training a model on *data*, we train a **model on other models**.
 
 5. Evaluate whether this synthesized CNN can recognize *black cats*.
 
-➡️ **It can.**
+ **It can.**
 
 ---
 
-## 🧪 Methodology
+##  Methodology
 
-### 📂 Datasets
+###  Datasets
 
 | Dataset | Samples |
 |------|--------|
@@ -75,7 +75,7 @@ Instead of training a model on *data*, we train a **model on other models**.
 
 ---
 
-### 🏗️ Model Architectures
+###  Model Architectures
 
 #### CNNs
 - 2 Convolutional layers
@@ -106,18 +106,18 @@ Instead of training a model on *data*, we train a **model on other models**.
 
 ---
 
-## 📈 Results
+##  Results
 
-- ✅ The generated CNN successfully **clusters black cat images**
-- 📉 UMAP projections show **clear separation** of semantic concepts
-- 📐 Cosine similarity confirms meaningful feature alignment
-- 🧠 Demonstrates **unsupervised semantic composition**
+-  The generated CNN successfully **clusters black cat images**
+-  UMAP projections show **clear separation** of semantic concepts
+-  Cosine similarity confirms meaningful feature alignment
+-  Demonstrates **unsupervised semantic composition**
 
 > The model learns *“black AND cat”* without ever seeing a black cat.
 
 ---
 
-## 🧩 Why This Matters
+##  Why This Matters
 
 Traditional ML assumes:
 > *New task ⇒ new labeled data*
@@ -135,22 +135,22 @@ This has implications for:
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
-- 🔧 Hyperparameter optimization for clustering and feature fusion
-- 📐 Alternative feature-space similarity metrics
-- 🧠 Semantic-aware end-to-end pipelines
-- 🧪 Scaling to deeper CNNs and transformers
-- 🔁 Multi-attribute model composition
+-  Hyperparameter optimization for clustering and feature fusion
+-  Alternative feature-space similarity metrics
+-  Semantic-aware end-to-end pipelines
+-  Scaling to deeper CNNs and transformers
+-  Multi-attribute model composition
 
 ---
 
-## ⚙️ Setup & Execution
+##  Setup & Execution
 
-### 🖥️ Hardware Requirements
+###  Hardware Requirements
 - GPU with **≥ 6GB VRAM** (recommended)
 
-### 🧪 Software Requirements
+###  Software Requirements
 
 - Python **3.11**
 - PyTorch **2.5**
@@ -166,10 +166,10 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-###📄 License
+### License
 MIT
 
-### 🧪 Research focus
+###  Research focus
 
 Generative models, representation learning, and non-traditional ML paradigms.
 
